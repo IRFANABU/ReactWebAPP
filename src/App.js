@@ -1,24 +1,24 @@
 import logo from './logo.svg';
+import About from './components/About/about';
+import Contact from './components/Contact/contact';
+import Navbar from './components/Navbar/navbar';
+import Home from './components/Home/home';
+import Footer from './components/Footer/footer';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // fragment using in react <>  </>
+    <>
+    <Navbar/>
+    <Home Children="its our Home page"/>
+    <About>
+      <h2>second One of About page</h2>
+   </About>
+   <Contact/>
+    <Footer/>
+    </>
+   
   );
 }
 
