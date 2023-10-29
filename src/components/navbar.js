@@ -1,36 +1,38 @@
-import React from 'react';
-import {Navbar,Container, NavItem} from 'react-bootstrap';
-import {  NavLink } from 'react-router-dom';
 
-const navbar = () => {
+import {Navbar,Container, NavItem,Button} from 'react-bootstrap';
+import { NavLink as Link} from 'react-router-dom';
+// import {Bars} from './navbarelement'
+const navbar = (props) => {
      const navStyle=({isActive})=>{
         return {
           fontWeight:isActive ? 'bold':'normal',
-          backgroundColor :isActive ?'orange':'light'
+          // textDecoration:isActive ? 'underline':'none',
+          backgroundColor :isActive ?'lavender':'whitesmoke',
+          textDecoration:'none',
+          
         }
      }
+   
   return (
     <div>
       <Navbar expand="lg" className='bg-light'>
-   
-        <Container className='' style={{justifyContent:"space-between",}}> 
-        <Navbar.Toggle className='ms-auto'/>
-        <div className='nav'>
-        <Navbar.Collapse id="basic-navbar-nav" className='' style={{padding:"20px"}}>
+        <Container className='justify-content-center' > 
+        <Navbar.Toggle className='me-auto' id="menuIcon"/>
+        <div className='' id='navbar-nav' style={{borderRadius:"10px"}}>
+        <Navbar.Collapse id="basic-navbar-nav" className=''  style={{padding:"20px 20px",}}>
          <NavItem>
-         <NavLink  style={navStyle} to="/home">Home</NavLink>
+         <Link  style={navStyle} to="/home">Home</Link>
          </NavItem>
          <NavItem>
-         <NavLink to="/about" style={navStyle}>About</NavLink>
+         <Link to="/about" style={navStyle}>About</Link>
          </NavItem>
         <NavItem>
-         <NavLink to="/contact"  style={navStyle}>Contact</NavLink>
+         <Link to="/contact"  style={navStyle}>Contact</Link>
         </NavItem>
           </Navbar.Collapse>
         </div>
-       
         </Container>
-   
+      <Button className='me-5 new' style={{padding:"5px"}} id='Lbtn'>{props.signBtn}</Button>
       </Navbar>
     </div>
   )

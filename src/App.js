@@ -12,7 +12,7 @@ function App() {
     // fragment using in react <>  </> multiple tag
     <>
     <Routers>
-    <Navbar/>
+    <Navbar signBtn="Sign In"/>
     <Routes>
       <Route path='/' element={<Home  Children="its our Home page"/>}></Route>
       <Route path='/home' element={<Home Children="its our home page"/>}/>

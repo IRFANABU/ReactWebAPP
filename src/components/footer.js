@@ -6,7 +6,7 @@ import { Container } from 'react-bootstrap'
 const footer = (props) => {
     const first = {
         color: "red",
-        backgroundColor: "yellow",
+        backgroundColor: "gray",
         display: "flex",
         justifyItems: "center"
     }
@@ -15,7 +15,7 @@ const footer = (props) => {
 
         <footer className="bg-light">
             {/* <Container style={first}> */}
-            <div className="container" style={first}>
+            <div className="container-fluid" style={first}>
                 <Container className=''>
                     {details1}
                 </Container>

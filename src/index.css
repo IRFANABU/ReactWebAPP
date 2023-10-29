@@ -15,3 +15,26 @@ code {
 nav a{
   padding: 20px 10px;
 }
+
+@media only screen and (min-width:450px) and (max-width:720px) {
+  #basic-navbar-nav{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin: 20px 50px;
+    padding: 20px 20px;
+
+  }
+  #basic-navbar-nav NavLink{
+    color: blueviolet;
+  }
+
+  #menuIcon{
+    position: relative;
+   left:90%
+  }
+  #Lbtn{
+    display: none;
+  }
+  
+}
