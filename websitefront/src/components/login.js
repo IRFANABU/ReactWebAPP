@@ -52,6 +52,7 @@ function Login() {
         <div className='mb-3'>
           <label htmlFor='password'>Password</label>
           <input type='password' name='password' placeholder='Password' className='form-control' onChange={handleValues} />
+          {errors.password && <span className='text-danger'>{errors.password}</span>}
         </div>
         <button type='submit' className='btn btn-success w-100'>Log In</button>
         <p className='text-center my-2'>Create an New Account</p>

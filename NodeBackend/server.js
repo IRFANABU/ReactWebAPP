@@ -1,8 +1,8 @@
 const express = require('express')
-const mysql = require('./db')
+const mysql = require('./dbconnect')
 const cors = require('cors')
 
-//
+//define the xpress app
 const app = express();
 app.use(cors());
 app.use(express.json())

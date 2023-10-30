@@ -1,7 +1,6 @@
 
-import {Navbar,Container, NavItem,Button} from 'react-bootstrap';
+import {Navbar,Container, NavItem} from 'react-bootstrap';
 import { NavLink as Link} from 'react-router-dom';
-// import {Bars} from './navbarelement'
 const navbar = (props) => {
      const navStyle=({isActive})=>{
         return {
@@ -32,7 +31,6 @@ const navbar = (props) => {
           </Navbar.Collapse>
         </div>
         </Container>
-      <Button className='me-5 new' style={{padding:"5px"}} id='Lbtn'>{props.signBtn}</Button>
       </Navbar>
     </div>
   )
