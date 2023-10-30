@@ -14,8 +14,8 @@ function App() {
     // fragment using in react <>  </> multiple tag
     <>
     <Routers>
-    {/* <Navbar signBtn="Sign In"/>
-    <Routes>
+    <Navbar signBtn="Sign In"/>
+    {/* <Routes>
       <Route path='/' element={<Home  Children="its our Home page"/>}></Route>
       <Route path='/home' element={<Home Children="its our home page"/>}/>
       <Route path='/about' element={<About/>}/>
@@ -29,21 +29,20 @@ function App() {
 
     <Routes>
     <Route path='/' element={<Login/>}/>
-      <Route path='/signup' element={<Signup/>}/>
+    <Route path='/signup' element={<Signup/>}/>
     </Routes>
-    <Navbar signBtn="Sign In"/>
-    <Routes>
-      <Route path='/' element={<Home  Children="its our Home page"/>}></Route>
-      <Route path='/home' element={<Home Children="its our home page"/>}/>
-      <Route path='/about' element={<About/>}/>
-      <Route path='/contact' element={<Contact/>}/>
-      <Route path='/about' element={<About title="aboutone"/>}/>
-    </Routes>
-    
-    <Footer details1="hello" details2="hello" details3="hello"/>
 
+
+    <Routes>
+    
+    <Route path='/home' element={<Home Children="its our home page"/>}/>
+    <Route path='/about' element={<About/>}/>
+    <Route path='/contact' element={<Contact/>}/>
+    <Route path='/about' element={<About title="aboutone"/>}/>
+    </Routes>
+   
     </Routers>
-  
+   
     </>
    
   );
