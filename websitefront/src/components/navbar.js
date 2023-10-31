@@ -1,6 +1,7 @@
 
 import {Navbar,Container, NavItem} from 'react-bootstrap';
 import { NavLink as Link} from 'react-router-dom';
+import './navbar.css';
 const navbar = () => {
      const navStyle=({isActive})=>{
         return {
@@ -14,7 +15,7 @@ const navbar = () => {
    
   return (
     <div>
-      <Navbar expand="lg" className='bg-light'>
+      <Navbar expand="lg" className='navbars'>
         <Container className='' > 
         <Navbar.Toggle className='me-auto' id="menuIcon"/>
         <div className='' id='navbar-nav' style={{borderRadius:"10px"}}>

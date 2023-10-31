@@ -50,7 +50,7 @@ function Signup() {
         </div>
         <button className='btn btn-primary w-100'>Register</button>
         <div className='my-2'>
-        <Link to="/" className='w-100 btn btn-white border rounded-0 bg-light' >Already have an Account</Link>
+        <Link to="/login" className='w-100 btn btn-white border rounded-0 bg-light' >Already have an Account</Link>
         </div>
      </form>
     </div>
