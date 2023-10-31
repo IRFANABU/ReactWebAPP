@@ -1,40 +1,34 @@
 
 import About from './pages/About/about';
 import Contact from './pages/Contact/contact';
-import Navbar from './components/navbar';
 import Home from './pages/Home/home';
-import Footer from './components/footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Routers, Routes, Route } from "react-router-dom";
 import Login from './components/login';
-import Signup from './components/signup'
+import Signup from './components/signup';
+import Navbar from './components/navbar';
+import Footer from './components/footer';
 import './App.css';
 function App() {
   return (
     // fragment using in react <>  </> multiple tag
     <>
 
-{/* 
-<Navbar signBtn="Sign In"/>
-    <Routes>
-       <Route path='/' element={<Home  Children="its our Home page"/>}></Route>
-      <Route path='/home' element={<Home Children="its our home page"/>}/>
-      <Route path='/about' element={<About/>}/>
-      <Route path='/contact' element={<Contact/>}/>
-      <Route path='/about' element={<About title="aboutone"/>}/>
-    </Routes>
-    <Footer details1="hello" details2="hello" details3="hello"/> */}
-
-
-
-
-
 
     <Routers>
+    
     <Routes>
+                    // Login and signup
     <Route path='/' element={<Login/>}/>
-      <Route path='/signup' element={<Signup/>}/>
+    <Route path='signup' element={<Signup/>}/>
+   
+    <Route path='home' element={<><Navbar/><Home Children="its our home page"/> <Footer/> </>}/>
+    <Route path='about' element={<><Navbar/><About/><Footer/></>}/>
+    <Route path='contact' element={<><Navbar/><Contact/><Footer/></>}/>
+   
+
     </Routes>
+   
     </Routers>
 
     </>

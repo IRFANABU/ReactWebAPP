@@ -10,20 +10,20 @@ const footer = (props) => {
         display: "flex",
         justifyItems: "center"
     }
-    const { details1, details2, details3 } = props;
+    // const { details1, details2, details3 } = props;
     return (
 
         <footer className="bg-light">
             {/* <Container style={first}> */}
             <div className="container-fluid" style={first}>
                 <Container className=''>
-                    {details1}
+                hello
                 </Container>
                 <Container className=''>
-                    {details2}
+                   world
                 </Container>
                 <Container className=''>
-                {details3}
+              welcome
             </Container>
             </div>
 

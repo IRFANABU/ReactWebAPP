@@ -1,7 +1,7 @@
 
 import {Navbar,Container, NavItem} from 'react-bootstrap';
 import { NavLink as Link} from 'react-router-dom';
-const navbar = (props) => {
+const navbar = () => {
      const navStyle=({isActive})=>{
         return {
           fontWeight:isActive ? 'bold':'normal',
@@ -15,7 +15,7 @@ const navbar = (props) => {
   return (
     <div>
       <Navbar expand="lg" className='bg-light'>
-        <Container className='justify-content-center' > 
+        <Container className='' > 
         <Navbar.Toggle className='me-auto' id="menuIcon"/>
         <div className='' id='navbar-nav' style={{borderRadius:"10px"}}>
         <Navbar.Collapse id="basic-navbar-nav" className=''  style={{padding:"20px 20px",}}>
@@ -31,6 +31,7 @@ const navbar = (props) => {
           </Navbar.Collapse>
         </div>
         </Container>
+        <Link to='/signup' className="btn btn-danger me-3">Signup</Link>
       </Navbar>
     </div>
   )

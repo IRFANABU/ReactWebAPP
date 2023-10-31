@@ -24,15 +24,9 @@ function Login() {
     setErrors(Validation(values));
     if (errors.email === '' && errors.password === '') {
       axios.post("http://localhost:8081/login", values).then(res => {
-
-        if (res.data === "success") {
-          navigate('/navbar')
-        }
-        else {
-          setErrors(Validation(values));
-          console.log("errrrrr")
-
-        }
+        
+       navigate('/home')
+       console.log(res)
       }).catch(err => {
         console.log(err)
       })
