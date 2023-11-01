@@ -1,3 +1,22 @@
 .navbars{
     background-image: linear-gradient(#987899, #232455);
+    padding: 10px;
+    
+}
+
+
+
+
+@media only Screen and (min-width:450px) and (max-width:720px) {
+
+
+#btnStyle{
+    display: none;
+}
+    
+}
+@media only Screen and (min-width:721px) and (max-width:990px) {
+    #btnStyle{
+        display: none;
+    }
 }

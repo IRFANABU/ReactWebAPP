@@ -1,5 +1,5 @@
 
-import {Navbar,Container, NavItem} from 'react-bootstrap';
+import {Navbar,Container, NavItem,Nav} from 'react-bootstrap';
 import { NavLink as Link} from 'react-router-dom';
 import './navbar.css';
 const navbar = () => {
@@ -7,34 +7,36 @@ const navbar = () => {
         return {
           fontWeight:isActive ? 'bold':'normal',
           // textDecoration:isActive ? 'underline':'none',
-          backgroundColor :isActive ?'lavender':'whitesmoke',
+          backgroundColor :isActive ?'lavender':'',
           textDecoration:'none',
-          
+          color:'black',
+         
+        
         }
      }
    
   return (
-    <div>
-      <Navbar expand="lg" className='navbars'>
-        <Container className='' > 
-        <Navbar.Toggle className='me-auto' id="menuIcon"/>
-        <div className='' id='navbar-nav' style={{borderRadius:"10px"}}>
-        <Navbar.Collapse id="basic-navbar-nav" className=''  style={{padding:"20px 20px",}}>
-         <NavItem>
+      <Navbar expand="lg" className="navbars">
+      <Container className="me-auto"  id=''>
+        <Navbar.Brand>MO Kart</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav" className='listItem'>
+        <Nav className="me-auto listItem1" id='listItem1' > 
+        <NavItem className='item'>
          <Link  style={navStyle} to="/home">Home</Link>
          </NavItem>
-         <NavItem>
+         <NavItem className='item'>
          <Link to="/about" style={navStyle}>About</Link>
          </NavItem>
-        <NavItem>
+        <NavItem className='item'>
          <Link to="/contact"  style={navStyle}>Contact</Link>
         </NavItem>
-          </Navbar.Collapse>
-        </div>
+          </Nav>
+        </Navbar.Collapse>
         </Container>
-        <Link to='/signup' className="btn btn-danger me-3">Signup</Link>
-      </Navbar>
-    </div>
+        <Link to='/signup' className="btn btn-danger me-5" id='btnStyle'>Signup</Link>
+    </Navbar>
+    
   )
 }
 

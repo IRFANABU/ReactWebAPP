@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { Container } from 'react-bootstrap';
 import './footer.css';
 
 
@@ -12,10 +11,9 @@ const Footer = (props) => {
     }
   
     // const { details1, details2, details3 } = props;
-   const data = new Date().getFullYear();
+        const [date ,setDate]=useState(new Date().getFullYear()) 
   
     return (
-       
        
         <footer class="bg-dark" id="footerDown">
             <div className="container  text-light mb-3 ">
@@ -66,7 +64,7 @@ const Footer = (props) => {
                 </div>
                 <div class="text-center text-light bg-dark smaller p-5 ">
                     <hr/>   
-                    <span id="datecopy">{data}</span>  
+                    <span id="datecopy">{date}</span>  
                 </div>
             </div>
         </footer>
