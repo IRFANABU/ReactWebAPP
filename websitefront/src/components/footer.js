@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
-import './footer.css';
-
+import '../styles/footer.css';
 
 const Footer = (props) => {
     const first = {

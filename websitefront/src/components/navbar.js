@@ -1,7 +1,9 @@
 
 import {Navbar,Container, NavItem,Nav} from 'react-bootstrap';
 import { NavLink as Link} from 'react-router-dom';
-import './navbar.css';
+import Logo from "../assets/logos.png";
+
+import '../styles/navbar.css';
 const navbar = () => {
      const navStyle=({isActive})=>{
         return {
@@ -17,11 +19,11 @@ const navbar = () => {
    
   return (
       <Navbar expand="lg" className="navbars">
-      <Container className="me-auto"  id=''>
-        <Navbar.Brand>MO Kart</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav" className='listItem'>
-        <Nav className="me-auto listItem1" id='listItem1' > 
+        <Container id='leftSide'>
+        <Navbar.Brand><img src={Logo} alt='Logo'/> Kart </Navbar.Brand>
+        </Container>
+      <Container className="w-100" id='rightSide' >
+        <Nav className="" id='listItem1'> 
         <NavItem className='item'>
          <Link  style={navStyle} to="/home">Home</Link>
          </NavItem>
@@ -32,9 +34,9 @@ const navbar = () => {
          <Link to="/contact"  style={navStyle}>Contact</Link>
         </NavItem>
           </Nav>
-        </Navbar.Collapse>
+          <Link to='/signup' className="btn btn-danger ms-3" id='btnStyle'>Signup</Link>
         </Container>
-        <Link to='/signup' className="btn btn-danger me-5" id='btnStyle'>Signup</Link>
+       
     </Navbar>
     
   )

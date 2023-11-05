@@ -1,0 +1,34 @@
+#imageContainer{
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+
+}
+#imageContainer img{
+  
+} 
+
+#imageContainer > #left{
+    display: flex;
+    justify-content: end;
+    align-items: self-end;
+    
+}
+#imageContainer > #right{
+    display: flex;
+    justify-content: end;
+    align-items: self-end;
+}
+
+#left > button{
+    position: absolute;
+    z-index: 3;
+   display: block;
+   
+}
+#right > button{
+    position: absolute;
+    z-index: 3;
+   display: block;
+   
+}
