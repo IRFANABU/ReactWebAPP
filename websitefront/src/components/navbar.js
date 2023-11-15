@@ -13,7 +13,6 @@ const navbar = () => {
           textDecoration:'none',
           color:'black',
          
-        
         }
      }
    

@@ -14,7 +14,10 @@ function signupValidation(values) {
         error.email="";
     }
     if(values.password === ""){
-        error.password="Passwoed should not be empty"
+        error.password="Password should not be empty"
+    }
+    else if(values.password.length < 8){
+        error.password = "Password length must be 8 characters"
     }
     else{
         error.password="";

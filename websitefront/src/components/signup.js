@@ -12,9 +12,9 @@ function Signup() {
   const [errors,setErrors]= useState({});
 
   const handleInputs = (event) => {
-    const type = event.target.name
-    const valueofall = event.target.value
-    setValues((userValues) => ({...userValues , [type]: valueofall }))
+    const inputTypes = event.target.name;
+    const valueofall = event.target.value;
+    setValues((userValues) => ({...userValues , [inputTypes]: valueofall }))
   }
   const handleSignupForm = (event) => {
     event.preventDefault();
